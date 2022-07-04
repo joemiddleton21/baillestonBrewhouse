@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bailleston Brewhouse</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <br />
+        <p style="font-size: 20px;" id="output"></p>
+        <script src="brewhouse.js"></script>
+    <link rel="stylesheet" href="brewhouse.css">
+    
+    <div class="background-image">
+        <div class="background-text">
+            <h1 style="font-size:50px">Log In</h1>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="BarMenu.html">Bar Menu</a>
+        <a href="Shop.html">Shop</a>
+        <a href="VisitUs.html" style="float:right">Visit Us</a>
+        <a href="MyAccount.html" style="float:right">My Account</a>
+        <a href="LogIn.html" style="float:right">Log In</a>
+    </div>
+    
+    <br>
+    <form action="">
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" required><br>
+        <input type="submit" onsubmit="logIn"/>  <br><br>
+    </form>
+<!--        I am assuming the log in function will be learned next term so for now i have just given it a filler name in the submit function-->
+
+    <br>
+        <a href="AdminPortal.html">Admin Login</a><br /> 
+<!--        I am assuming that i can use the same log-in method and use code to differentiate between admin and user but for now i wanted to show it was being addressed-->
+        <br>
+        <a href="ResetPassword.html">Forgotten Password?</a><br />
+    <br>
+
+
+    </body>
+</html>

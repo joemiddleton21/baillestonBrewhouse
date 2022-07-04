@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>Bailleston Brewhouse</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <br />
+        <p style="font-size: 20px;" id="output"></p>
+        <script src="brewhouse.js"></script>
+    <link rel="stylesheet" href="brewhouse.css">
+    
+    <div class="background-image">
+        <div class="background-text">
+            <h1 style="font-size:50px">Baillieston Brewhouse</h1>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="BarMenu.html">Bar Menu</a>
+        <a href="Shop.html">Shop</a>
+        <a href="VisitUs.html" style="float:right">Visit Us</a>
+        <a href="MyAccount.html" style="float:right">My Account</a>
+        <a href="LogIn.html" style="float:right">Log In</a>
+    </div>
+    
+    <br>
+    
+    <div class="card">
+        <h2>Baillieston Brewhouse Bar Menu</h2>
+        <h4>Below is our brewhouse food and drink menu's. We aim to provide local produce that aligns with the seasons. 
+            Our food is served as "small plates" and is designed to be shared amongst friends and family.
+            
+            <br> We cater for all dietry types, please speak to a member off staff if you have any dietary requirements.</h4>
+    </div>
+    
+    <div class="card">
+    <div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked breads with local salted butter 5.50</p><br>
+    
+      <h5>Haggis Bon Bons</h5>
+      <p class="w3-text-grey">Haggis sourced from the Buffallo Farm 7.00</p><br>
+    
+      <h5>Sliders</h5>
+      <p class="w3-text-grey">Four Beef sliders from our locally reared farm supplier <br>(vegetarian and vegan options available)  9.50</p><br>
+    
+      <h5>Haggis, Neeps and Tatties</h5>
+      <p class="w3-text-grey">A classic! (vegetarian and vegan options available)  7.50</p><br>
+    
+      <h5>Meat Sharing Platter</h5>
+      <p class="w3-text-grey">A favourite! Haggis bon bons, mini steak pies, sliders, ribs and wings! 16.50</p><br>
+      
+      <h5>Veggie Sharing Platter</h5>
+      <p class="w3-text-grey">A favourite! Veggie Haggis bon bons, mini vegetable pies, veggie sliders! 12.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bailleston Lager</h5>
+      <p class="w3-text-grey">Baillestons finest crisp lager 4.50</p><br>
+    
+      <h5>Cone Head Ale</h5>
+      <p class="w3-text-grey">A Fruity and Strong Pale Ale! 5.50</p><br>
+    
+      <h5>Clyde Built Stout</h5>
+      <p class="w3-text-grey">Whiskey and coffee aged stout 5.00</p><br>
+    
+      <h5>Kviek IPA</h5>
+      <p class="w3-text-grey">Made with kviek yeast, a fruity, summer ale 4.50</p><br>
+      
+      <h5>Citrus Sour</h5>
+      <p class="w3-text-grey">A citrus fruit sour 4.50</p><br>
+
+      <h5>Lenzie Mafia Ale</h5>
+      <p class="w3-text-grey">Our original home brew! Made in appreciation of Don Karenleone! 5.00</p><br>
+    
+      <h5>Overseas Brew</h5>
+      <p class="w3-text-grey">Our take on an American Pale Ale! 4.00</p><br>
+      
+      <h5>Off-It Lager</h5>
+      <p class="w3-text-grey">Our Non-Alcoholic lager with the same crisp taste as our flagship beer.
+          <br>For the hero drivers of the group! 3.75</p><br>
+      
+      <h5>Wine</h5>
+      <p class="w3-text-grey">Red, White, Rose, ask a member of staff for the current list.</p><br>
+    
+      <h5>The Soft Stuff</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+  </div>
+</div>
+</div>
+    <br>
+    
+    <br>
+    </body>
+</html>
